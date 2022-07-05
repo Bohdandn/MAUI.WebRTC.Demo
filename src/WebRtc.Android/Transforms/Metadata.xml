@@ -1,0 +1,24 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='org.webrtc']/class[@name='StatsReport.Value']/field[@name='value']" name="managedName">value</attr>
+
+    <attr path="/api/package[@name='org.webrtc']" name="managedName">WebRtc.Android</attr>
+    <attr path="/api/package[@name='org.webrtc.audio']" name="managedName">WebRtc.Android.Audio</attr>
+    <attr path="/api/package[@name='org.webrtc.voiceengine']" name="managedName">WebRtc.Android.VoiceEngine</attr>
+
+    <attr path="/api/package[@name='org.webrtc']/interface[@name='CameraSession']" name="visibility">public</attr>
+
+    <attr path="/api/package[@name='org.webrtc']/class[@name='SessionDescription.Type']" name="managedName">SessionDescription.SdpType</attr>
+
+    <attr path="/api/package[@name='org.webrtc']/class[@name='EncodedImage.FrameType']" name="managedName">EncodedImage.VideoFrameType</attr>
+
+    <attr path="/api/package[@name='org.webrtc']/interface[@name='PeerConnection.Observer']/method[@name='onConnectionChange']" name="abstract">true</attr>
+    <attr path="/api/package[@name='org.webrtc']/interface[@name='PeerConnection.Observer']/method[@name='onSelectedCandidatePairChanged']" name="abstract">true</attr>
+    <attr path="/api/package[@name='org.webrtc']/interface[@name='PeerConnection.Observer']/method[@name='onTrack']" name="abstract">true</attr>
+
+    <remove-node path="/api/package[@name='org.webrtc']/class[@name='VideoEncoder.ResolutionBitrateLimits']/method[@name='getFrameSizePixels']" />
+    <remove-node path="/api/package[@name='org.webrtc']/class[@name='VideoEncoder.ResolutionBitrateLimits']/method[@name='getMinStartBitrateBps']" />
+    <remove-node path="/api/package[@name='org.webrtc']/class[@name='VideoEncoder.ResolutionBitrateLimits']/method[@name='getMinBitrateBps']" />
+    <remove-node path="/api/package[@name='org.webrtc']/class[@name='VideoEncoder.ResolutionBitrateLimits']/method[@name='getMaxBitrateBps']" />
+
+</metadata>
