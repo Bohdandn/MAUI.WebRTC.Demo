@@ -30,3 +30,5 @@ C:\Program Files\dotnet\packs\Microsoft.iOS.Windows.Sdk\15.4.414\tools\msbuild\i
 ```
 
 Feel free to suggest any solutions or create PR's from forks. I will get back here time to time and try to fix iOS bindings or check if it was fixed by .net team.
+
+iOS issue seems to be fixed - https://github.com/xamarin/xamarin-macios/issues/15289
