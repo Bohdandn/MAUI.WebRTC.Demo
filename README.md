@@ -24,7 +24,7 @@ iOS ApiDefinitions.cs was modified in order to complie:
 - [iOS(10, 0)] - commented
 - new RTCVideoCodecInfo[] SupportedCodecs { get; } - new added
 
-#### Update ios workload 16.0.523
+#### Building from CLI
 iOS working perfectly if compiled on mac os.
 On windows it is failing with hundreds of similar errors for all Microsoft.iOS classes used in api definitions file:
 ```
@@ -32,6 +32,7 @@ C:\Program Files\dotnet\packs\Microsoft.iOS.Sdk\16.0.523\tools\msbuild\iOS\Xamar
 ```
 As I understand msbuild copies all referenced libraries including Microsoft.iOS.dll to remote mac. Looks like build conflicts between original sdk libraries and copied sdk libraries.
 
-Probably issue discribed in https://github.com/xamarin/xamarin-macios/issues/16001 is still present.
+#### Building from VS
+Fails with issue discribed in https://github.com/xamarin/xamarin-macios/issues/16001.
 
 Feel free to suggest any solutions or create PR's from forks. I will get back here time to time and try to fix iOS bindings or check if it was fixed by .net team.
