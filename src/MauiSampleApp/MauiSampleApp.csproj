@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net6.0-android;net6.0-ios</TargetFrameworks>
+		<TargetFrameworks>net7.0-android;net7.0-ios</TargetFrameworks>
 		<OutputType>Exe</OutputType>
 		<RootNamespace>MauiSampleApp</RootNamespace>
 		<UseMaui>true</UseMaui>
@@ -15,11 +15,11 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
-	<ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-android' ">
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net7.0-android' ">
 		<ProjectReference Include="..\WebRtc.Android\WebRtc.Android.csproj" />
 	</ItemGroup>
 
-	<ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' ">
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net7.0-ios' ">
 		<ProjectReference Include="..\WebRtc.iOS\WebRtc.iOS.csproj" />
 	</ItemGroup>
 </Project>
